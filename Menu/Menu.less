@@ -24,7 +24,12 @@
   padding: 30px 0;
   text-align: center;
 }
-
+@keyframes SlideIn{
+  0%{transform: translateX(-350px)}
+  100%{transform: translateX(0px)}
+}
 .menu--open {
   display: block;
+  animation-name: SlideIn;
+  animation-duration: 2s;
 }
